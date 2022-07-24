@@ -194,6 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
   background: #0563bb;
+  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
 }
 
 .nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
@@ -279,12 +280,12 @@ h1, h2, h3, h4, h5, h6 {
 #hero p {
   color: #45505b;
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 30px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #854fee;
   letter-spacing: 1px;
 }
 
@@ -293,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links a {
-  font-size: 24px;
+  font-size: 30px;
   display: inline-block;
   color: #45505b;
   line-height: 1;

@@ -15,8 +15,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function(){
 	Route::post('package/publish', [PackageController::class, 'publish'])->name('package.publish');
 });
 
-
-
  // Blog Controller Routes 
 use App\Http\Controllers\Admin\BlogController;
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function(){

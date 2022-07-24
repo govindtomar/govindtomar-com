@@ -9,11 +9,11 @@
 
       <div class="col-lg-4">
         <div class="info">
-          <div class="address">
+{{--           <div class="address">
             <i class="bx bx-map"></i>
             <h4>Location:</h4>
             <p>Indore, Madhya Pradesh, India</p>
-          </div>
+          </div> --}}
 
           <div class="email">
             <i class="bx bx-mail-send"></i>
@@ -66,4 +66,4 @@
     </div>
 
   </div>
-</section><!-- End Contact Section -->
+</section>
