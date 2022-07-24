@@ -1,0 +1,221 @@
+body{
+    background: rgb(248 252 252);
+}
+.container-more{
+  margin-top: 100px !important
+}
+.card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 5px 1px #dddddd;;
+          box-shadow: 0px 1px 5px 1px #dddddd;;
+  margin-bottom: 1.875rem;
+  transition: all .5s ease-in-out;
+  position: relative;
+  border: 0px solid transparent;
+  border-radius: 0.25rem;
+}
+.card .card-header {
+    background-color: #ffffff;
+    border-radius: 0;
+    margin: 25px;
+    padding: 0;
+    border-color: #eaeaea;
+    position: relative;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px;
+}
+ul{
+    list-style:none;
+}
+ul li .btn{
+    border-radius:0;
+}
+.btn{
+  border-radius: 0;
+}
+.form-control{
+  border-radius: 0;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+
+.chat-container{
+  background: #ffffff;
+    box-shadow: 0px 4px 9px 1px #ddd;
+    /*padding-bottom: 50px;*/
+}
+.chat-header{
+  text-align: right;
+  padding: 10px 20px;
+  border-bottom: 1px solid #dddddd;
+  background: #960fce;
+}
+.chat-header h5{
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.chat-messages {
+    display: block;
+    height: 55vh;
+    overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #aaaaaa #ffffff;
+}
+
+/* Works on Chrome/Edge/Safari */
+.chat-messages::-webkit-scrollbar {
+  width: 12px;
+}
+.chat-messages::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+}
+
+.sender-message{
+  display: block;
+    width: 100%;
+    clear: both;
+}
+.sender-message .message-width{
+  float: right;
+    width: 85%;
+    text-align: right;
+    clear: both;
+    margin-right: 8px;
+}
+.sender-message .message{
+    color: #1da70c;
+    font-size: 16px;
+    background: rgba(29, 167, 12, .08);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px 0px 5px 5px;
+    position: relative;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.sender-message .message:after {
+  content: "";
+    position: absolute;
+    top: 0;
+    right: -7px;
+    border-top: 10px solid black;
+    border-top-color: rgba(29, 167, 12, .08);
+    border-right: 7px solid transparent;
+}
+
+.receiver-message{
+  display: block;
+    width: 100%;
+    clear: both;
+}
+.receiver-message .message-width{
+  float: left;
+    width: 85%;
+    text-align: left;
+    clear: both;
+    margin-left: 10px;
+}
+.receiver-message .message{
+  color: #960fce;
+    font-size: 16px;
+    background: rgba(150, 15, 206, .08);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 0px 7px 7px 7px;
+    position: relative;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.receiver-message .message:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -7px;
+    border-top: 10px solid black;
+    border-top-color: rgba(150, 15, 206, .08);
+    border-left: 7px solid transparent;
+}
+.btn-container{
+  float: right;
+  margin-right: 10px;
+}
+.chat-form{
+  border-top: 1px solid #dddddd;
+  padding-top: 10px;
+}
+#message{
+  margin-right: 10px;
+  margin-left: 10px;
+  width: calc(100% - 20px);
+  margin-right: 50px;
+  padding-right: 55px;
+}
+.message-group{
+  position: relative;
+}
+.translated-text {
+    clear: both;
+    padding: 15px 10px;
+}
+.btn-send{
+    border: none;
+    height: 36px;
+    width: 40px;
+    background: rgba(29, 167, 12, .1);
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border-radius: 0px 5px 5px 0;
+    outline: none;
+    border-left: 1px solid #ced4da;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #a1cbef;
+    outline: 0;
+    box-shadow: none; 
+}
+.btn-send:focus{
+  outline: none;
+}
+.btn-send img{
+  width: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container-more{
+    margin-top: 80px !important;
+  }
+  .container-more > .row > .col-xl-12, 
+  .container-more > .row > .col-xxl-12, 
+  .container-more > .row > .col-md-8,
+  .container-more > .row > .col-md-4{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .card {
+
+  }
+  .card .card-header {
+    margin: 15px;
+  }
+
+  .card .card-body {
+    padding: 15px;
+  }
+}
